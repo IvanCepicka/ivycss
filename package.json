@@ -4,13 +4,27 @@
   "description": "tiny (s)css framework",
   "author": "Ivan Čepička",
   "scripts": {
+    "build": "sass --style=compressed src:dist",
     "format": "prettier --write .",
-    "prepare": "husky"
+    "prepublishOnly": "",
+    "prepare": "husky && npm run build"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "default": "./dist/all.css",
+      "style": "./dist/all.css",
+      "sass": "./src/all.scss"
+    }
   },
   "devDependencies": {
-    "prettier": "^3.8.1",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.7"
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.8.1",
+    "sass-embedded": "^1.97.3"
   },
   "lint-staged": {
     "*.{json,prettierrc,css,scss,md}": [
