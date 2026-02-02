@@ -1,0 +1,36 @@
+// basic text stuff
+
+// regular body text
+.ivy-text {
+  font-family: var(--ivy-font-family);
+  font-size: var(--ivy-font-size-md);
+  font-weight: var(--ivy-font-weight);
+  color: var(--ivy-color-fg);
+}
+
+// base title stuff
+@mixin title {
+  font-family: var(--ivy-font-family);
+  font-weight: var(--ivy-font-weight-title);
+  color: var(--ivy-color-fg);
+}
+
+// big title
+.ivy-title,
+.ivy-title-1 {
+  @include title;
+  font-size: var(--ivy-font-size-xxxl);
+}
+
+// medium title
+.ivy-title-2,
+.ivy-subtitle {
+  @include title;
+  font-size: var(--ivy-font-size-xxl);
+}
+
+// small title
+.ivy-title-3 {
+  @include title;
+  font-size: var(--ivy-font-size-xl);
+}

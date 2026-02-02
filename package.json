@@ -25,6 +25,11 @@
       "style": "./dist/themes/default.css",
       "sass": "./src/themes/default.scss"
     },
+    "./text": {
+      "default": "./dist/text.css",
+      "style": "./dist/text.css",
+      "sass": "./src/text.scss"
+    },
     "./components/button": {
       "default": "./dist/components/button.css",
       "style": "./dist/components/button.css",
