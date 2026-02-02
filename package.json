@@ -4,9 +4,19 @@
   "description": "tiny (s)css framework",
   "author": "Ivan Čepička",
   "scripts": {
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky"
   },
   "devDependencies": {
     "prettier": "^3.8.1"
+  },
+  "dependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7"
+  },
+  "lint-staged": {
+    "*.{json,prettierrc,css,scss,md}": [
+      "prettier --write"
+    ]
   }
 }
