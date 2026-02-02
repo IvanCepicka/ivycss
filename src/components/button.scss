@@ -48,7 +48,7 @@
   transition: background 100ms;
   background-color: transparent;
 
-  &:hover:not(:active) {
+  &:active {
     background-color: var(--ivy-color-hover);
   }
 }
@@ -56,7 +56,8 @@
 // filled button
 // - uses filled color as the fill
 .ivy-button,
-.ivy-button-filled {
+.ivy-button-filled,
+.ivy-button-filled-primary {
   @include filled-button(
     var(--ivy-color-fg-primary),
     var(--ivy-color-primary),

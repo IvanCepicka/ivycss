@@ -12,6 +12,7 @@
 @mixin title {
   font-family: var(--ivy-font-family);
   font-weight: var(--ivy-font-weight-title);
+  margin-bottom: var(--ivy-spacing-md);
   color: var(--ivy-color-fg);
 }
 
