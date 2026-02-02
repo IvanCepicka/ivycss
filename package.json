@@ -4,7 +4,8 @@
   "description": "tiny (s)css framework",
   "author": "Ivan Čepička",
   "scripts": {
-    "build": "sass --style=compressed src:dist",
+    "build": "npm run clean && sass --style=compressed src:dist",
+    "clean": "rimraf dist",
     "format": "prettier --write .",
     "prepublishOnly": "",
     "prepare": "husky && npm run build"
@@ -24,6 +25,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "prettier": "^3.8.1",
+    "rimraf": "^6.1.2",
     "sass-embedded": "^1.97.3"
   },
   "lint-staged": {
