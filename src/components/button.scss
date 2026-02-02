@@ -5,6 +5,7 @@
 // - avoid using externally
 @mixin base-button($text-color) {
   user-select: none;
+  cursor: pointer;
 
   font-family: var(--ivy-font-family);
   font-size: var(--ivy-font-size-lg);
@@ -22,8 +23,9 @@
 // filled button template
 @mixin filled-button($text-color, $color, $hover-color, $active-color) {
   @include base-button($text-color);
+  border: none;
 
-  transition: background 200ms;
+  transition: background 100ms;
   background-color: $color;
 
   &:hover {
@@ -43,7 +45,7 @@
   border-color: $outline-color;
   border-width: var(--ivy-line-width);
 
-  transition: background 200ms;
+  transition: background 100ms;
   background-color: transparent;
 
   &:hover:not(:active) {
@@ -58,7 +60,7 @@
   @include filled-button(
     var(--ivy-color-fg-primary),
     var(--ivy-color-primary),
-    var(--ivy-color-darker-lighter),
+    var(--ivy-color-primary-darker),
     var(--ivy-color-primary-lighter)
   );
 }
@@ -71,7 +73,7 @@
   @include filled-button(
     var(--ivy-color-fg-danger),
     var(--ivy-color-danger),
-    var(--ivy-color-danger-lighter),
+    var(--ivy-color-danger-darker),
     var(--ivy-color-danger-lighter)
   );
 }
