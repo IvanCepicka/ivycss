@@ -2,5 +2,11 @@
   "name": "ivycss",
   "version": "0.1.0",
   "description": "tiny (s)css framework",
-  "author": "Ivan Čepička"
+  "author": "Ivan Čepička",
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.8.1"
+  }
 }
