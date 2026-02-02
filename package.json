@@ -19,6 +19,16 @@
       "default": "./dist/all.css",
       "style": "./dist/all.css",
       "sass": "./src/all.scss"
+    },
+    "./themes/default": {
+      "default": "./dist/themes/default.css",
+      "style": "./dist/themes/default.css",
+      "sass": "./src/themes/default.scss"
+    },
+    "./components/button": {
+      "default": "./dist/components/button.css",
+      "style": "./dist/components/button.css",
+      "sass": "./src/components/button.scss"
     }
   },
   "devDependencies": {
