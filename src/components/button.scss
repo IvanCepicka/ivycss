@@ -48,7 +48,7 @@
   transition: background 100ms;
   background-color: transparent;
 
-  &:active {
+  &:hover:not(:active) {
     background-color: var(--ivy-color-hover);
   }
 }
