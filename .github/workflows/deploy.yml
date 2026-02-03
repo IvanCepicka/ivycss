@@ -34,7 +34,7 @@ jobs:
         run: |
           rm -rf publish
           mkdir -p publish/dist/themes
-          cp index.html publish/index.html
+          cp demo.html publish/index.html
           cp dist/all.css publish/dist/all.css
           cp dist/themes/default.css publish/dist/themes/default.css
 
