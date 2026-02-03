@@ -22,13 +22,9 @@ jobs:
         run: |
           npm install -g pnpm
 
-      - name: Install dependencies
+      - name: Install dependencies and build
         run: |
           pnpm install
-
-      - name: Build CSS
-        run: |
-          pnpm run build
 
       - name: Prepare files
         run: |
