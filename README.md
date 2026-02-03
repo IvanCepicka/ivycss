@@ -20,3 +20,10 @@ I recommend looking into `demo.html` for almost every component, or you can alwa
 - `ivy-button-outline` - it has only an outline, as the name tells you
 
 You have to include a theme too, so if you want to start quickly, I made a default theme, it's in `themes/default.css`. You can include it by adding the `ivy-theme-default` class to `body` (or any other valid parent).
+
+For bundlers, I created a package with exported both css and sass, but I won't upload it to npm (yet). Using the sass has only one advantage - you get the mixins. But it's not neccessary. It's kept in the same structure as in the `src` folder.
+
+- `ivycss` - all styles bundled into one package. While it's small for now, it's not recommended. Note: this does not include any themes!
+- `ivycss/themes/default` - the default theme. You should include this if you don't have a custom one.
+- `ivycss/text` - basic text stuff, techincally not needed
+- `ivycss/components/*` - all the components
