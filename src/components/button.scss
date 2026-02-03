@@ -48,8 +48,12 @@
   transition: background 100ms;
   background-color: transparent;
 
-  &:hover:not(:active) {
-    background-color: var(--ivy-color-hover);
+  &:hover {
+    background-color: color-mix(in srgb, $outline-color 15%, transparent);
+  }
+
+  &:active {
+    background-color: color-mix(in srgb, $outline-color 5%, transparent);
   }
 }
 
