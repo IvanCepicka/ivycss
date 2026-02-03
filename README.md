@@ -1,14 +1,10 @@
 # ivy.css
 
-_Minimalistic modular CSS-only framework. It isn't complete!_
-
-Well, it isn't definitely CSS only, it's written using Sass. But it's compiled into pure CSS!
+_tiny (s)css framework_
 
 I have made this simple CSS framework for learning. As it's experimental, incomplete, unstable and I won't probably actively mantain it, I advise you to don't use it in production. But if you find this project to interest you, you are free to try it. I have made even a demo that is hosted on GitHub pages. I will show basic usage too.
 
 ## Usage
-
-Because it's CSS-only, you can use it in any way you want. I recommend to avoid bundling for testing it out.
 
 If you chose to don't use a bundler, you can easily build the framework (you will need Node installed) and copy the `all.css` and `themes/default.css` files from dist directory elsewhere. Then you can include them in your HTML.
 
